@@ -1,0 +1,110 @@
+@import url(./common.css);
+@font-face {
+  font-family: "Hanna";
+  src: url(../font/BMHANNAPro.ttf);
+}
+body {
+  font-family: "Hanna";
+}
+
+/* header style */
+/* 이 클래스는 페이지 제목에 색이 바뀌는 효과를 위한 것입니다.*/
+.target_page {
+  color: #2ac1bc;
+  border-bottom: 4px solid #2ac1bc;
+}
+header {
+  background: #fff;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+}
+header .header1 {
+  display: flex;
+  width: 70%;
+  margin: 40px auto 40px;
+  justify-content: space-between;
+  color: rgb(126, 128, 130);
+  font-weight: 700;
+  font-size: 14px;
+}
+header .header1 .BM_list_btn {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .header1 .BM_list_btn li {
+  padding: 0 10px;
+  border-left: 1px solid #999;
+}
+header .header1 .BM_list_btn li a{
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .BM_list_btn li:first-child {
+  padding-left: 0;
+  border-left: 0px;
+}
+header .header1 .BM_list_btn li a:hover {
+  background: rgba(228, 230, 232, 1);
+}
+header .header1 .intro-text {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+header .header1 .intro-text li {
+  padding: 0 10px;
+  border-right: 1px solid #999;
+}
+header .header1 .intro-text li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+header .header1 .intro-text li a {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .intro-text li a:hover{
+  background: rgba(228, 230, 232, 1);
+}
+
+header .header2 .main-header{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .header2 .main-header .logo{
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+  height: 50px;
+}
+header .header2 .main-header .logo a img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+header .header2 .main-header .gnb {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: stretch;
+}
+header .header2 .main-header .gnb li {
+  margin: 0 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+header .header2 .main-header .gnb li a {
+  display: block;
+}
+header .header2 .main-header .gnb li:last-child{
+  margin-right: 0;
+}
+/* end header style */

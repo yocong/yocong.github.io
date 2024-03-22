@@ -1,0 +1,31 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+
+/* reset */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+button, input {
+  outline: none;
+  border: none;
+  color: inherit;
+}
+
+/* common */
+*{
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 글자를 박스 중앙으로 배치 */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

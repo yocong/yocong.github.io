@@ -1,0 +1,574 @@
+/* reset css */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+/* font awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+/* common style */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@import url(./common.css);
+@font-face {
+  font-family: "Hanna";
+  src: url(../font/BMHANNAPro.ttf);
+}
+body {
+  font-family: "Hanna";
+}
+
+/* header style */
+/* 이 클래스는 페이지 제목에 색이 바뀌는 효과를 위한 것입니다.*/
+.target_page {
+  color: #2ac1bc;
+  border-bottom: 4px solid #2ac1bc;
+}
+header {
+  background: #fff;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+}
+header .header1 {
+  display: flex;
+  width: 70%;
+  margin: 40px auto 40px;
+  justify-content: space-between;
+  color: rgb(126, 128, 130);
+  font-weight: 700;
+  font-size: 14px;
+}
+header .header1 .BM_list_btn {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .header1 .BM_list_btn li {
+  padding: 0 10px;
+  border-left: 1px solid #999;
+}
+header .header1 .BM_list_btn li a {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .BM_list_btn li:first-child {
+  padding-left: 0;
+  border-left: 0px;
+}
+header .header1 .BM_list_btn li a:hover {
+  background: rgba(228, 230, 232, 1);
+}
+header .header1 .intro-text {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+header .header1 .intro-text li {
+  padding: 0 10px;
+  border-right: 1px solid #999;
+}
+header .header1 .intro-text li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+header .header1 .intro-text li a {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .intro-text li a:hover {
+  background: rgba(228, 230, 232, 1);
+}
+
+header .header2 .main-header {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .header2 .main-header .logo {
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+  height: 50px;
+}
+header .header2 .main-header .logo a img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+header .header2 .main-header .gnb {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: stretch;
+}
+header .header2 .main-header .gnb li {
+  margin: 0 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+header .header2 .main-header .gnb li a {
+  display: block;
+}
+header .header2 .main-header .gnb li:last-child {
+  margin-right: 0;
+}
+/* end header style */
+
+/* section.main  */
+
+section.main {
+  background-image: url("https://ceo-cdn.baemin.com/optimize?src=https%3A%2F%2Fceo-cdn.baemin.com%2Fcdn%2Fceo-square%2Fproduction%2Fstatic%2Fsrc%2Fimages%2Fbusiness%2Fmain%2Fbusiness-hero-back.jpg%3Fver%3D85165fe470c88f655d886fd9cb5c69b7");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 420px;
+  margin-top: 160px;
+  position: relative;
+}
+
+section.main .main-title {
+  background: rgba(0, 0, 0, 0.4);
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+}
+
+section.main .main-title .underline {
+  position: relative;
+  bottom: 50px;
+  left: 38%;
+}
+
+section.main .main-title .underline img {
+  width: 200px;
+}
+
+section.main .bb-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+section.main .title {
+  /* background: orange; */
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  padding: 30px;
+}
+
+/* <!-- //section main -->  */
+
+/*  공통  */
+section {
+  /* background: blue; */
+  width: 70%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+section.mark {
+  padding-bottom: 0;
+}
+
+section .title {
+  /* border: 4px solid #000; */
+  font-size: 40px;
+  /* font-weight: 700; */
+  line-height: 1.5;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+section .list {
+  /* border: 4px solid #000; */
+  display: flex;
+  justify-content: space-between;
+}
+
+section .list li {
+  background: rgb(241, 240, 240);
+  border-radius: 30px;
+  width: 45%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+section .list li div {
+  /* background: yellow;  */
+  width: 300px;
+  padding-left: 30px;
+}
+
+section .list li em {
+  /* background: orange; */
+  font-size: 30px;
+  /* font-weight: 700; */
+
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+section .list li span {
+  /* background: violet;  */
+  font-size: 20px;
+  color: gray;
+  line-height: 1.3;
+  /* font-weight: 700; */
+
+  height: 110px;
+  display: flex;
+}
+
+section .list li img {
+  /* background: #000; */
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+/* 공통 */
+
+/* <!-- //section service --> */
+
+section.service .list li em {
+  /* background: orange; */
+  font-size: 30px;
+  /* font-weight: 700; */
+
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+section.service .list li span {
+  /* background: violet;  */
+  font-size: 20px;
+  color: gray;
+
+  height: 110px;
+  display: flex;
+}
+
+/* <!-- //section service --> */
+
+/* <!-- //section solution --> */
+section.solution {
+  background: rgb(241, 240, 240);
+  width: 100%;
+
+  position: relative;
+}
+
+section.solution .title {
+  width: 70%;
+  margin: auto;
+}
+
+section.solution .list {
+  background: rgb(241, 240, 240);
+  width: 70%;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.solution .list li {
+  background: #fff;
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+section.solution .list li:nth-child(1),
+section.solution .list li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+section.solution .list li em {
+  /* background: orange; */
+  width: 400px;
+  line-height: 1.3;
+}
+section.solution .list li p {
+  /* background: orange; */
+  width: 400px;
+  line-height: 1.5;
+  color: gray;
+}
+
+section.solution .list li img {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+}
+
+/* <!-- //section solution --> */
+
+/* <!-- //section experience --> */
+section.experience .list li {
+  position: relative;
+}
+
+section.experience .list li div {
+  /* background: yellow;  */
+  width: 400px;
+  padding-left: 40px;
+}
+
+section.experience .list li em {
+  line-height: 1.5;
+  padding: 80px 0;
+}
+
+section.experience .list li span {
+  /* background: violet;  */
+  line-height: 1.2;
+  height: 80px;
+  font-size: 18px;
+}
+
+section.experience .list .date {
+  /* background: yellow;  */
+  color: gray;
+  width: 400px;
+  height: 50px;
+  font-size: 14px;
+}
+
+section.experience .list li img {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+/* <!-- //section experience --> */
+
+/* <!-- //section growth --> */
+
+section.growth {
+  /* background: orange; */
+  width: 100%;
+  background: rgb(241, 240, 240);
+  position: relative;
+}
+
+section.growth .title {
+  text-align: center;
+}
+
+section.growth img {
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+section.growth .growth-center {
+  width: 60%;
+  margin: auto;
+}
+
+section.growth .bottom {
+  /* font-weight: 700; */
+  padding-top: 40px;
+  padding-left: 370px;
+}
+
+section.growth .bottom em {
+  font-size: 30px;
+}
+
+section.growth .bottom p {
+  /* background: tomato; */
+  font-size: 20px;
+  color: gray;
+  padding-top: 20px;
+}
+
+/* <!-- //section growth --> */
+
+/* <!-- //section business --> */
+section.business .list li {
+  overflow: hidden;
+  /* background: orange; */
+  width: 47%;
+}
+
+section.business .list li img {
+  width: 200px;
+  height: auto;
+}
+
+section.business .list li div {
+  /* background: yellow;  */
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+section.business .list li span {
+  /* background: violet;  */
+  line-height: 1.2;
+  font-size: 17px;
+  padding-bottom: 0px;
+  height: 100px;
+}
+
+section.business .list li p {
+  color: blue;
+  font-size: 14px;
+  /* font-weight: 600; */
+}
+
+section.business .list li p i {
+  margin-left: 10px;
+}
+
+/* footer style */
+
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+footer .inner {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+}
+
+footer .ft-logo {
+  /* font-size: 50px; */
+  margin-right: 30px;
+}
+
+footer .inner .ft-logo img {
+  width: 150px;
+}
+
+.footer-info {
+  width: 70%;
+  /* background: orange; */
+  font-weight: 700;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer-info .list {
+  /* background: green; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-info .list li {
+  padding: 10px;
+}
+
+.footer-info .list li.black {
+  color: #000;
+}
+
+.footer-info .mark {
+  /* background: red; */
+  margin: 30px 0;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-info .mark span {
+  margin: 0 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info .detail {
+  /* background: greenyellow; */
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.footer-info .detail span {
+  font-weight: 900;
+}
+
+.footer-info .detail i {
+  margin-left: 10px;
+  color: #999;
+}
+
+footer .service-info {
+  /* background: #000; */
+  width: 250px;
+  position: relative;
+}
+
+footer .service-info .select button {
+  width: 180px;
+  height: 40px;
+  font-size: 13px;
+  border: 1px solid #777;
+  text-align: left;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+footer .service-info .select i {
+  color: #999;
+  text-align: right;
+
+  position: relative;
+  left: 50px;
+}
+
+footer .service-info .share {
+  width: 40%;
+  display: flex;
+
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+
+footer .service-info .share img {
+  width: 30px;
+  margin: 10px;
+}

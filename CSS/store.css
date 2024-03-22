@@ -1,0 +1,637 @@
+@import url("common.css");
+
+@font-face {
+  font-family: "JUA";
+  src: url(../font/BMJUA_ttf.ttf);
+}
+body {
+  font-family: "JUA";
+}
+/* header style */
+/* 이 클래스는 페이지 제목에 색이 바뀌는 효과를 위한 것입니다.*/
+.target_page {
+  color: #2ac1bc;
+  border-bottom: 4px solid #2ac1bc;
+}
+header {
+  background: #fff;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+}
+header .header1 {
+  display: flex;
+  width: 70%;
+  margin: 40px auto 40px;
+  justify-content: space-between;
+  color: rgb(126, 128, 130);
+  font-weight: 700;
+  font-size: 14px;
+}
+header .header1 .BM_list_btn {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .header1 .BM_list_btn li {
+  padding: 0 10px;
+  border-left: 1px solid #999;
+}
+header .header1 .BM_list_btn li a {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .BM_list_btn li:first-child {
+  padding-left: 0;
+  border-left: 0px;
+}
+header .header1 .BM_list_btn li a:hover {
+  background: rgba(228, 230, 232, 1);
+}
+header .header1 .intro-text {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+header .header1 .intro-text li {
+  padding: 0 10px;
+  border-right: 1px solid #999;
+}
+header .header1 .intro-text li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+header .header1 .intro-text li a {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+header .header1 .intro-text li a:hover {
+  background: rgba(228, 230, 232, 1);
+}
+
+header .header2 .main-header {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .header2 .main-header .logo {
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+  height: 50px;
+}
+header .header2 .main-header .logo a img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+header .header2 .main-header .gnb {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: stretch;
+}
+header .header2 .main-header .gnb li {
+  margin: 0 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+header .header2 .main-header .gnb li a {
+  display: block;
+}
+header .header2 .main-header .gnb li:last-child {
+  margin-right: 0;
+}
+/* end header style */
+
+/* section.main style */
+section.main {
+  background: url("../img/yohan/main.jpg") no-repeat center/cover fixed;
+  height: 100vh;
+  position: relative;
+}
+section.main::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+section.main .main-text {
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  line-height: 50px;
+  /* animation: fadeIn 1s forwards; */
+}
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 10px;
+  }
+} */
+section.main .main-text img {
+  width: 140px;
+}
+section.main .main-text .text h2 {
+  font-size: 2.7em;
+}
+section.main .main-text .text p {
+  font-size: 1.2em;
+  margin: 25px 0;
+}
+section.main .main-text .text a {
+  background-color: rgb(26, 124, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 5px;
+  width: 200px;
+}
+section.main .main-text .text a:hover {
+  background-color: rgb(0, 98, 231);
+}
+section.main .main-text .text a i {
+  margin-left: 10px;
+}
+section.main .main-text .text p:last-child {
+  line-height: 16px;
+  font-size: 0.9em;
+}
+/* //section.main style*/
+
+/* section.recommend style*/
+section.recommend {
+  height: 100vh;
+}
+section.recommend .main-text {
+  /* border: 3px solid blue; */
+  width: 70%;
+  margin: 150px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+
+section.recommend .main-text .box {
+  width: 40%;
+  height: 250px;
+}
+section.recommend .main-text .box h2 {
+  font-size: 2.9em;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+section.recommend .main-text .box p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+section.recommend .main-text .box p i {
+  margin-right: 8px;
+}
+section.recommend .main-text img {
+  width: 33%;
+  height: 520px;
+}
+/* //section.recommend style*/
+
+/* section.customer */
+section.customer {
+  background-color: rgb(243, 245, 247);
+  height: 100vh;
+}
+section.customer .main-text {
+  /* border: 1px solid orange; */
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+section.customer .main-text .text1 {
+  font-size: 2.8em;
+  line-height: 60px;
+}
+section.customer .main-text .text2 {
+  display: flex;
+  padding-top: 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+section.customer .main-text .text2 .box {
+  background-color: #fff;
+  width: 48%;
+  border-radius: 16px;
+  padding: 45px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+section.customer .main-text .text2 .box1 {
+}
+section.customer .main-text .text2 .box1 .inner-text2 {
+  line-height: 1.6;
+}
+section.customer .main-text .text2 .box1 .inner-text2 p:first-child {
+  color: #7e8082;
+  font-size: 1.2em;
+}
+section.customer .main-text .text2 .box1 .inner-text2 p:nth-child(2) {
+  font-size: 2.2em;
+}
+section.customer .main-text .text2 .box1 .inner-text2 p:last-child {
+  color: #007aff;
+  font-size: 1.2em;
+  padding-top: 13px;
+}
+section.customer .main-text .text2 .box1 img {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
+section.customer .main-text .text2 .box2 {
+}
+section.customer .main-text .text2 .box2 .inner-text2 {
+  line-height: 1.6;
+}
+section.customer .main-text .text2 .box2 .inner-text2 p:first-child {
+  color: #7e8082;
+  font-size: 1.2em;
+}
+section.customer .main-text .text2 .box2 .inner-text2 p:nth-child(2) {
+  font-size: 2.2em;
+}
+section.customer .main-text .text2 .box2 .inner-text2 p:last-child {
+  color: #007aff;
+  font-size: 1.2em;
+  padding-top: 13px;
+}
+section.customer .main-text .text2 .box2 img {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
+/* //section.customer */
+
+/* section.app */
+section.app {
+  height: 100vh;
+}
+section.app .main-text {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+section.app .main-text h2 {
+  font-size: 2.6em;
+  line-height: 60px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+section.app .main-text .text2 {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 363px;
+  margin: 20px 0 3%;
+}
+
+section.app .main-text .text2 .box img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 290px;
+  border-radius: 15px;
+}
+section.app .main-text .text2 .box .inner-box {
+  /* border: 3px solid blue; */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+/* 이미지 */
+section.app .main-text .text2 .box .inner-box img {
+  width: 48px;
+  height: 48px;
+}
+section.app .main-text .text2 .box .inner-box span {
+  font-size: 1.3em;
+  margin-left: 16px;
+}
+section.app .main-text .text3 {
+  background-color: rgb(26, 124, 255);
+  color: #fff;
+  display: inline-block;
+  width: 216px;
+  height: 56px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  line-height: 56px;
+}
+section.app .main-text .text3:hover {
+  background-color: rgb(0, 98, 231);
+}
+/* //section.app */
+
+/* section.knowhow */
+section.knowhow {
+  background-color: rgb(243, 245, 247);
+  height: 100vh;
+}
+section.knowhow .main-text {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+section.knowhow .main-text h2 {
+  font-size: 2.6em;
+  line-height: 60px;
+  letter-spacing: -2px;
+}
+section.knowhow .main-text .text2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+  height: 442px;
+}
+
+section.knowhow .main-text .text2 .box .inner-box {
+  height: 100%;
+}
+section.knowhow .main-text .text2 .box .inner-box img {
+  width: 360px;
+  height: 291px;
+  border-radius: 15px;
+}
+section.knowhow .main-text .text2 .box .inner-box p:nth-child(2) {
+  font-size: 1.4em;
+  margin-top: 16px;
+}
+section.knowhow .main-text .text2 .box .inner-box p:nth-child(3) {
+  font-size: 1.2em;
+  color: #7e8082;
+  margin-top: 16px;
+}
+section.knowhow .main-text .text2 .box .inner-box a {
+  color: #007aff;
+  display: block;
+  margin-top: 20px;
+}
+/* //section.knowhow */
+
+/* section.expense */
+section.expense {
+  height: 100vh;
+}
+section.expense .main-text {
+  width: 70%;
+  margin: 200px auto;
+  text-align: center;
+  height: 600px;
+}
+section.expense .main-text h2 {
+  font-size: 2.6em;
+  line-height: 60px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+section.expense .main-text .text2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+  text-align: left;
+}
+section.expense .main-text .text2 .box .inner-box {
+  background-color: rgb(243, 245, 247);
+  border-radius: 15px;
+  width: 360px;
+  height: 275px;
+  padding: 22px;
+}
+section.expense .main-text .text2 .box .inner-box img {
+  width: 48px;
+  height: 48px;
+}
+section.expense .main-text .text2 .box .inner-box p:nth-of-type(1) {
+  font-size: 1.3em;
+  margin-top: 25px;
+}
+section.expense .main-text .text2 .box .inner-box p:nth-of-type(1) span.mint {
+  color: rgb(42, 193, 188);
+}
+section.expense .main-text .text2 .box .inner-box p:nth-of-type(2) {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #7e8082;
+}
+section.expense .main-text .text2 .box .inner-box a {
+  display: block;
+  font-size: 1em;
+  margin-top: 30px;
+  color: #007aff;
+}
+section.expense .main-text .text3 {
+  background-color: rgb(26, 124, 255);
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  height: 56px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  line-height: 56px;
+}
+section.expense .main-text .text3:hover {
+  background-color: rgb(0, 98, 231);
+}
+/* //section.expense */
+
+/* section.consulting */
+section.consulting {
+  background: url("../img/yohan/consulting.jpg") no-repeat center/cover;
+  height: 45vh;
+  position: relative;
+}
+section.consulting::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+section.consulting .main-text {
+  position: absolute;
+  text-align: center;
+}
+
+section.consulting .main-text h2 {
+  color: #fff;
+  font-size: 2.7em;
+  line-height: 60px;
+}
+section.consulting .main-text a {
+  display: inline-block;
+  background-color: #fff;
+  width: 132px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+section.consulting .main-text a:hover {
+  background-color: #f0f0e9;
+}
+section.consulting .main-text p {
+  color: #fff;
+  margin-top: 25px;
+  font-size: 0.8em;
+}
+/* //section.consulting */
+
+/* footer style */
+section.mark {
+  padding-bottom: 0;
+}
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+footer .inner {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+}
+
+footer .ft-logo {
+  /* font-size: 50px; */
+  margin-right: 30px;
+}
+
+footer .inner .ft-logo img {
+  width: 150px;
+}
+
+.footer-info {
+  width: 70%;
+  /* background: orange; */
+  font-weight: 700;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer-info .list {
+  /* background: green; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-info .list li {
+  padding: 10px;
+}
+
+.footer-info .list li.black {
+  color: #000;
+}
+
+.footer-info .mark {
+  /* background: red; */
+  margin: 30px 0;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-info .mark span {
+  margin: 0 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info .detail {
+  /* background: greenyellow; */
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.footer-info .detail span {
+  font-weight: 900;
+}
+
+.footer-info .detail i {
+  margin-left: 10px;
+  color: #999;
+}
+
+footer .service-info {
+  /* background: #000; */
+  width: 250px;
+  position: relative;
+}
+
+footer .service-info .select button {
+  width: 180px;
+  height: 40px;
+  font-size: 13px;
+  border: 1px solid #777;
+  text-align: left;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+footer .service-info .select i {
+  color: #999;
+  text-align: right;
+
+  position: relative;
+  left: 50px;
+}
+
+footer .service-info .share {
+  width: 40%;
+  display: flex;
+
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+
+footer .service-info .share img {
+  width: 30px;
+  margin: 10px;
+}
+/* //footer style */
