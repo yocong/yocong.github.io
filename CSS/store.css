@@ -251,8 +251,6 @@ section.customer .main-text .text2 .box {
   display: flex;
   justify-content: space-between;
 }
-section.customer .main-text .text2 .box1 {
-}
 section.customer .main-text .text2 .box1 .inner-text2 {
   line-height: 1.6;
 }
@@ -272,8 +270,6 @@ section.customer .main-text .text2 .box1 img {
   width: 100px;
   height: 100px;
   margin-top: 100px;
-}
-section.customer .main-text .text2 .box2 {
 }
 section.customer .main-text .text2 .box2 .inner-text2 {
   line-height: 1.6;
